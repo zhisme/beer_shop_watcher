@@ -1,0 +1,8 @@
+---
+sites:
+  -
+    url: 'https://biereartisanale.ch/109-levures-500g'
+    xpath: '//*[@id="center_column"]/h1/span[2]'
+  -
+    url: 'https://biereartisanale.ch/22-houblons?id_category=22&n=45'
+    xpath: '//*[@id="center_column"]/h1/span[2]'
