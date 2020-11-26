@@ -2,7 +2,16 @@
 sites:
   -
     url: 'https://biereartisanale.ch/109-levures-500g'
-    xpath: '//*[@id="center_column"]/h1/span[2]'
+    xpath:
+      qty: '//*[@id="center_column"]/h1/span[2]'
+      name: '//*[@id="center_column"]/h1/span[1]'
   -
     url: 'https://biereartisanale.ch/22-houblons?id_category=22&n=45'
-    xpath: '//*[@id="center_column"]/h1/span[2]'
+    xpath:
+      qty: '//*[@id="center_column"]/h1/span[2]'
+      name: '//*[@id="center_column"]/h1/span[1]'
+  -
+    url: 'https://www.brauundrauchshop.ch/safale-be-134-500gr'
+    xpath:
+      qty: '//*[@id="stock-availability-value-1478"]'
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'

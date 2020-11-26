@@ -1,24 +1,28 @@
 #!/usr/bin/env ruby
 
 require 'bundler/setup'
-require 'sequel'
-require 'beer_shop_watcher/db_config'
-require 'logger'
+require 'beer_shop_watcher/database/connection'
+require 'beer_shop_watcher/app_logger'
 
-db_conf = BeerShopWatcher::DbConfig.()['psql']
+DB = BeerShopWatcher::Database::Connection.current
+AppLogger = BeerShopWatcher::AppLogger.current
 
-DB = Sequel.connect(adapter: :postgres, user: db_conf['user'], password: db_conf['password'], host: db_conf['host'], database: db_conf['database'], max_connections: 10, logger: Logger.new('log/db.log'))
 DB.extension :pg_triggers
 
-unless DB.table_exists?(:products)
+if DB.table_exists?(:products)
+  AppLogger.warn('No action. Database products has been already created.')
+else
   DB.create_table :products do
     primary_key :id
     column :url, String, null: false, index: true
-    column :xpath, String, null: false
+    column :xpath, :jsonb, null: false
+    column :name, String, null: false, index: true
     column :inner_text, String, null: false
-    column :count, Integer, index: true, null: false
+    column :count, Integer, null: false, index: true
     column :created_at, DateTime, index: true
   end
 
   DB.pgt_created_at(:products, :created_at)
+
+  AppLogger.info('Database products created.')
 end

@@ -1,9 +1,9 @@
 module BeerShopWatcher
   class Formatter
-    def self.call(inner_text)
-      count, _rest = inner_text.match(/\d+/).to_a
+    def self.call(scraped_hash)
+      count, _rest = scraped_hash['qty'].match(/\d+/).to_a
 
-      count
+      [scraped_hash['name'], count]
     end
   end
 end
