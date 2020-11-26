@@ -1,10 +1,9 @@
 #!/usr/bin/env ruby
 
 require 'bundler/setup'
+require 'beer_shop_watcher'
 require 'beer_shop_watcher/config/initializers'
 require 'beer_shop_watcher/database/connection'
 require 'beer_shop_watcher/app_logger'
-require 'beer_shop_watcher'
-require 'pry'
 
-Pry.start
+BeerShopWatcher.scrape

@@ -22,12 +22,14 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
   spec.required_ruby_version = '>= 2.7.1'
 
+  spec.add_dependency 'caxlsx'
   spec.add_dependency 'nokogiri', '~> 1.10'
   spec.add_dependency 'pg', '~> 1.2.3'
+  spec.add_dependency 'rest-client'
+  spec.add_dependency 'rollbar'
   spec.add_dependency 'sequel', '~> 5.38'
   spec.add_dependency 'sequel_pg', '~> 1.14'
   spec.add_dependency 'sequel_postgresql_triggers'
-  spec.add_dependency 'rollbar'
 
   spec.add_development_dependency 'bundler', '~> 1.16.5'
   spec.add_development_dependency 'pry', '~> 0.13'

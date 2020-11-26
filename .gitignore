@@ -10,4 +10,5 @@
 # rspec failure tracking
 .rspec_status
 .db_config.yml
-log/db.log
+.secrets.yml
+log/*.log
