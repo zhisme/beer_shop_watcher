@@ -13,7 +13,10 @@ module BeerShopWatcher
       name, count = BeerShopWatcher::Formatter.(hash)
 
       BeerShopWatcher::Writer::Main.(site['url'], site['xpath'].to_json, name, hash['qty'], count)
-      AppLogger.current.debug("#{site['url']} proccessed")
+      AppLogger.debug("#{site['url']} proccessed")
+    rescue StandardError => e
+      AppLogger.error(e)
+      Rollbar.error(e)
     end
   end
 end

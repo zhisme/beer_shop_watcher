@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'bundler/setup'
+require 'beer_shop_watcher/config/initializers'
 require 'beer_shop_watcher'
 require "pry"
 

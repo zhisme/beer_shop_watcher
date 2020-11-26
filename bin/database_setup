@@ -5,7 +5,6 @@ require 'beer_shop_watcher/database/connection'
 require 'beer_shop_watcher/app_logger'
 
 DB = BeerShopWatcher::Database::Connection.current
-AppLogger = BeerShopWatcher::AppLogger.current
 
 DB.extension :pg_triggers
 

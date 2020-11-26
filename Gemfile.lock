@@ -4,6 +4,7 @@ PATH
     beer_shop_watcher (0.1.0)
       nokogiri (~> 1.10)
       pg (~> 1.2.3)
+      rollbar
       sequel (~> 5.38)
       sequel_pg (~> 1.14)
       sequel_postgresql_triggers
@@ -29,6 +30,7 @@ GEM
     rake (10.5.0)
     regexp_parser (1.8.2)
     rexml (3.2.4)
+    rollbar (3.1.1)
     rspec (3.10.0)
       rspec-core (~> 3.10.0)
       rspec-expectations (~> 3.10.0)

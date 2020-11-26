@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'sequel', '~> 5.38'
   spec.add_dependency 'sequel_pg', '~> 1.14'
   spec.add_dependency 'sequel_postgresql_triggers'
+  spec.add_dependency 'rollbar'
 
   spec.add_development_dependency 'bundler', '~> 1.16.5'
   spec.add_development_dependency 'pry', '~> 0.13'
