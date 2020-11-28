@@ -15,3 +15,148 @@ sites:
     xpath:
       qty: '//*[@id="stock-availability-value-1478"]'
       name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+  -
+    url: 'https://biereartisanale.ch/12-malts'
+    xpath:
+      qty: '//*[@id="center_column"]/h1/span[2]'
+      name: '//*[@id="center_column"]/h1/span[1]'
+  -
+    url: 'https://biereartisanale.ch/18-flocons'
+    xpath:
+      name: '//*[@id="center_column"]/h1/span[1]'
+      qty: '//*[@id="center_column"]/h1/span[2]'
+  -
+    url: 'https://www.brauundrauchshop.ch/lallemand-wildbrew-helveticus-pitch-250g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-6657"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/lallemand-wildbrew-philly-sour-500-g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-7044"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/lallemand-wildbrew-sour-pitch-250-g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-1290"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/lallemand-belgian-wit-500g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-6670"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/lallemand-bry-97-pale-ale-500g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-559"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/lallemand-k%C3%B6lsch-500g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-3529"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/lallemand-kveik-ale-500g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-6669"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/lallemand-munich-classic-500g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-6771"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/lallemand-new-england-500g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-1714"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/lallemand-nottingham-500g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-2905"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/lallemand-servomyces-n%C3%A4hrstoff-500g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-1915"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/lallemand-verdant-ipa-500g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-6895"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/safale-be-134-500gr'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-1478"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/safale-ha-18-500gr'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-949"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/safale-k97-500g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-2352"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/safale-s-04-500g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-863"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/safale-t-58-500g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-2240"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/safale-us-05-500g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-3099"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/safbrew-be-256-abbaye-500g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-2891"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/safbrew-f2-500gr'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-2878"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/safbrew-la01-500g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-6170"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/safbrew-s-33-500g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-2666"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/safbrew-wb-06-weizen-500g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-1813"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/saflager-s-189-500g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-1778"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/saflager-s-23-500g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-429"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/saflager-w-3470-500g'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-1100"]'
+  -
+    url: 'https://www.brauundrauchshop.ch/safale-be-134-500gr'
+    xpath:
+      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
+      qty: '//*[@id="stock-availability-value-1478"]'
