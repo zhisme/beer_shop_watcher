@@ -4,6 +4,6 @@ IFS=$'\n\t'
 set -vx
 
 bundle install
-cp secrets.tt.yml secrets.yml
+cp .secrets.tt.yml .secrets.yml
 createdb beer_shop_watcher
 bin/database_setup
