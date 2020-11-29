@@ -12,3 +12,4 @@
 .db_config.yml
 .secrets.yml
 log/*.log
+.DS_Store

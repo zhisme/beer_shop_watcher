@@ -3,7 +3,6 @@ PATH
   specs:
     beer_shop_watcher (0.1.0)
       caxlsx
-      faraday
       nokogiri (~> 1.10)
       pg (~> 1.2.3)
       rest-client
@@ -25,9 +24,6 @@ GEM
     diff-lcs (1.4.4)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
-    faraday (1.1.0)
-      multipart-post (>= 1.2, < 3)
-      ruby2_keywords
     htmlentities (4.3.4)
     http-accept (1.7.0)
     http-cookie (1.0.3)
@@ -38,7 +34,6 @@ GEM
     mime-types-data (3.2020.1104)
     mimemagic (0.3.5)
     mini_portile2 (2.4.0)
-    multipart-post (2.1.1)
     netrc (0.11.0)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
@@ -51,7 +46,7 @@ GEM
       method_source (~> 1.0)
     rainbow (3.0.0)
     rake (10.5.0)
-    regexp_parser (1.8.2)
+    regexp_parser (2.0.0)
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
@@ -72,7 +67,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.10.0)
     rspec-support (3.10.0)
-    rubocop (1.4.1)
+    rubocop (1.4.2)
       parallel (~> 1.10)
       parser (>= 2.7.1.5)
       rainbow (>= 2.2.2, < 4.0)
@@ -81,10 +76,9 @@ GEM
       rubocop-ast (>= 1.1.1)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
-    rubocop-ast (1.1.1)
+    rubocop-ast (1.2.0)
       parser (>= 2.7.1.5)
     ruby-progressbar (1.10.1)
-    ruby2_keywords (0.0.2)
     rubyzip (2.3.0)
     sequel (5.38.0)
     sequel_pg (1.14.0)
@@ -109,4 +103,4 @@ DEPENDENCIES
   rubocop (~> 1.0)
 
 BUNDLED WITH
-   1.17.2
+   1.16.5

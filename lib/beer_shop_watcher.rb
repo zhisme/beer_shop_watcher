@@ -1,37 +1,48 @@
 require 'beer_shop_watcher/version'
 require 'beer_shop_watcher/config_loader'
-require 'beer_shop_watcher/scraper'
-require 'beer_shop_watcher/formatter'
+require 'beer_shop_watcher/logic/scraper'
+require 'beer_shop_watcher/logic/formatter'
 require 'beer_shop_watcher/writer/main'
 require 'beer_shop_watcher/view_models/product'
-require 'beer_shop_watcher/view/xlsx'
-require 'beer_shop_watcher/deliver/mail'
+require 'beer_shop_watcher/view/main'
+require 'beer_shop_watcher/deliver/mail/main'
+require 'beer_shop_watcher/reports/main'
 
 module BeerShopWatcher
-  def self.scrape
-    config = BeerShopWatcher::ConfigLoader.()
+  def self.scrape # rubocop:disable Metrics/MethodLength, Metrics/AbcSize
+    config = ConfigLoader.()
 
     config['sites'].each do |site|
-      hash = BeerShopWatcher::Scraper.(site['url'], site['xpath'])
-      name, count = BeerShopWatcher::Formatter.(hash)
+      hash = Logic::Scraper.(site['url'], site['xpath'])
+      name, count = Logic::Formatter.(hash)
 
-      BeerShopWatcher::Writer::Main.(site['url'], site['xpath'].to_json, name, hash['qty'], count)
+      Writer::Main.insert_products(
+        site['url'], site['xpath'].to_json, name, hash['qty'], count
+      )
+
       AppLogger.debug("#{site['url']} proccessed")
     rescue StandardError => e
       AppLogger.error(e)
-      Rollbar.error(e) unless ENV['APP_ENV'] == 'dev'
+      notify_rollbar(e)
     end
   end
 
-  def self.export
-    products = DB[:products].where { (created_at > Date.today.prev_day) & (created_at < Date.today.next) }
+  def self.export(report_type = 'daily')
+    data = Reports::Main.(report_type)
 
-    view_models = products.map do |product|
-      ViewModels::Product.new(product).as_json
-    end
+    attachment = View::Main.('xlsx', data: data)
 
-    filename = View::Xlsx.new.(view_models)
+    Deliver::Mail::Main.('mailgun', attachment: attachment)
 
-    Deliver::Mail.(filename)
+    AppLogger.info("Reports were sent for #{Secrets.recipients.join(', ')}")
+  rescue StandardError => e
+    AppLogger.error(e)
+    notify_rollbar(e)
   end
+
+  def self.notify_rollbar(error)
+    Rollbar.error(error) unless ENV['APP_ENV'] == 'dev'
+  end
+
+  private_class_method :notify_rollbar
 end

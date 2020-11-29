@@ -3,20 +3,24 @@ require 'caxlsx'
 module BeerShopWatcher
   module View
     class Xlsx
-      def call(view_models)
+      def self.call(data:)
+        new.call(data)
+      end
+
+      def call(data)
         Axlsx::Package.new do |p|
           p.workbook.add_worksheet(name: name) do |sheet|
-            sheet.add_row %w[NAME URL YESTERDAYS_QUANTITY SOLD FETCHED_AT]
+            sheet.add_row %w[NAME URL YESTERDAYS_QUANTITY ADDED_STOCK SALES_24H]
 
-            view_models.each do |model|
-              sheet.add_row([model[:name], model[:url], model[:count], model[:diff_count], model[:created_at]])
+            data.each do |struct|
+              sheet.add_row([struct.name, struct.url, struct.quantity, struct.added, struct.sales])
             end
           end
 
           p.serialize(filename)
         end
 
-        filename
+        File.new(filename)
       end
 
       private
