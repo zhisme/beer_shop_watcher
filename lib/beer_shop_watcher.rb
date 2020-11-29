@@ -6,6 +6,8 @@ require 'beer_shop_watcher/writer/main'
 require 'beer_shop_watcher/view/main'
 require 'beer_shop_watcher/deliver/mail/main'
 require 'beer_shop_watcher/reports/main'
+require 'beer_shop_watcher/view/reports/daily'
+require 'beer_shop_watcher/view/reports/overall'
 
 module BeerShopWatcher
   def self.scrape # rubocop:disable Metrics/MethodLength, Metrics/AbcSize
@@ -26,14 +28,19 @@ module BeerShopWatcher
     end
   end
 
-  def self.export(report_type = 'daily')
-    data = Reports::Main.(report_type)
+  def self.export # rubocop:disable Metrics/MethodLength
+    daily_data = Reports::Main.('daily')
+    overall_data = Reports::Main.('overall')
 
-    attachment = View::Main.('xlsx', data: data)
+    daily_view = View::Reports::Daily.new(daily_data)
+    overall_view = View::Reports::Overall.new(overall_data)
 
-    Deliver::Mail::Main.('mailgun', attachment: attachment)
+    daily_report = View::Main.('xlsx', report_view: daily_view)
+    overall_report = View::Main.('xlsx', report_view: overall_view)
 
-    AppLogger.info("#{report_type} report was sent for #{Secrets['recipients'].join(', ')}")
+    Deliver::Mail::Main.('mailgun', attachments: [daily_report, overall_report])
+
+    AppLogger.info("Reports were sent for #{Secrets['recipients'].join(', ')}")
   rescue StandardError => e
     AppLogger.error(e)
     notify_rollbar(e)

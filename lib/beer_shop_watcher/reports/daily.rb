@@ -1,7 +1,7 @@
 module BeerShopWatcher
   module Reports
     class Daily
-      RowStruct = Struct.new(:name, :url, :quantity, :added, :sales)
+      ProductStruct = Struct.new(:name, :url, :quantity, :added, :sales)
 
       def self.call
         new.call
@@ -21,7 +21,7 @@ module BeerShopWatcher
       def build_structure(record, diff)
         added, sales = diff.negative? ? [diff, 0] : [0, diff]
 
-        RowStruct.new(record[:name], record[:url], record[:count], added, sales)
+        ProductStruct.new(record[:name], record[:url], record[:count], added, sales)
       end
 
       def find_diff(first_scrape, last_scrape)

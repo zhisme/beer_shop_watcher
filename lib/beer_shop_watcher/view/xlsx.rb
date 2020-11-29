@@ -3,18 +3,16 @@ require 'caxlsx'
 module BeerShopWatcher
   module View
     class Xlsx
-      def self.call(data:)
-        new.call(data)
+      def self.call(report_view:)
+        new(report_view).call
       end
 
-      def call(data)
+      def call
         Axlsx::Package.new do |p|
-          p.workbook.add_worksheet(name: name) do |sheet|
-            sheet.add_row %w[NAME URL YESTERDAYS_QUANTITY ADDED_STOCK SALES_24H]
+          p.workbook.add_worksheet(name: view[:name]) do |sheet|
+            sheet.add_row(view[:headers])
 
-            data.each do |struct|
-              sheet.add_row([struct.name, struct.url, struct.quantity, struct.added, struct.sales])
-            end
+            view[:rows].each { |row| sheet.add_row(row) }
           end
 
           p.serialize(filename)
@@ -25,12 +23,14 @@ module BeerShopWatcher
 
       private
 
-      def filename
-        "tmp/#{name}.xlsx"
+      attr_reader :view
+
+      def initialize(report_view)
+        @view = report_view.to_view
       end
 
-      def name
-        "beer_shop_#{Time.now.to_i}"
+      def filename
+        "tmp/#{view[:name]}.xlsx"
       end
     end
   end
