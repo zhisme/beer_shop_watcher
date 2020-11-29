@@ -3,7 +3,6 @@ require 'beer_shop_watcher/config_loader'
 require 'beer_shop_watcher/logic/scraper'
 require 'beer_shop_watcher/logic/formatter'
 require 'beer_shop_watcher/writer/main'
-require 'beer_shop_watcher/view_models/product'
 require 'beer_shop_watcher/view/main'
 require 'beer_shop_watcher/deliver/mail/main'
 require 'beer_shop_watcher/reports/main'
@@ -34,7 +33,7 @@ module BeerShopWatcher
 
     Deliver::Mail::Main.('mailgun', attachment: attachment)
 
-    AppLogger.info("Reports were sent for #{Secrets.recipients.join(', ')}")
+    AppLogger.info("#{report_type} report was sent for #{Secrets['recipients'].join(', ')}")
   rescue StandardError => e
     AppLogger.error(e)
     notify_rollbar(e)
