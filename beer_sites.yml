@@ -160,3 +160,123 @@ sites:
     xpath:
       name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
       qty: '//*[@id="stock-availability-value-1478"]'
+  -
+    url: 'https://biereartisanale.ch/levures-seches-pour-bieres/414-levure-seche-safale-s-04-500g.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/levures-500g/787-levure-seche-safale-be-134-500g.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/levures-seches-pour-bieres/416-levure-seche-safbrew-wb-06-500g-7610235000480.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/levures-seches-pour-bieres/417-levure-seche-safale-us-05-500g.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/levures-seches-pour-bieres/472-levure-seche-safebrew-t-58-500g.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/levures-seches-pour-bieres/472-levure-seche-safebrew-t-58-500g.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/levures-seches-pour-bieres/476-levure-seche-safebrew-s-23-500g.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/levures-seches-pour-bieres/482-levure-seche-saflager-w3470.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/levures-seches-pour-bieres/491-levure-seche-safbrew-abbaye-500g.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/levures-seches-pour-bieres/492-levure-seche-safbrew-s-33-500g.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/levures/684-levure-seche-safebrew-k-97-500g.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/levures-seches-pour-bieres/893-levure-seche-saflager-s-189-115g.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/houblons/632-houblon-ahtanum-en-pellets-10-grammes.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/houblons/44-houblon-amarillo-en-pellet-10-grammes-.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/houblons/45-houblon-brewers-gold-en-pellets-10-grammes.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/houblons/48-houblon-cascade-en-pellets-10-grammes.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/houblons/484-houblon-cascade-suisse-bio-en-pellets-10-grammes.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/houblons/474-houblon-centennial-en-pellets-10-grammes.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/houblons/46-houblon-challenger-en-pellets-10-grammes.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/houblons/316-houblon-chinook-en-pellets-10-grammes.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/houblons/383-houblon-citra-en-pellets-10-grammes.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/houblons/70-houblon-east-kent-goldings-en-pellets-10-grammes.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/houblons/47-houblon-fuggles-en-pellets-10-grammes.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
+  -
+    url: 'https://biereartisanale.ch/houblons/449-houblon-galaxy-en-pellets-10-grammes.html'
+    xpath:
+      name: '//*[@id="center_column"]/div/div[3]/h1'
+      qty: '//*[@id="quantityAvailable"]'
