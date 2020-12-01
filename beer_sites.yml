@@ -1,282 +1,424 @@
 ---
-sites:
-  -
-    url: 'https://biereartisanale.ch/109-levures-500g'
-    xpath:
-      qty: '//*[@id="center_column"]/h1/span[2]'
-      name: '//*[@id="center_column"]/h1/span[1]'
-  -
-    url: 'https://biereartisanale.ch/22-houblons?id_category=22&n=45'
-    xpath:
-      qty: '//*[@id="center_column"]/h1/span[2]'
-      name: '//*[@id="center_column"]/h1/span[1]'
-  -
-    url: 'https://www.brauundrauchshop.ch/safale-be-134-500gr'
-    xpath:
-      qty: '//*[@id="stock-availability-value-1478"]'
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-  -
-    url: 'https://biereartisanale.ch/12-malts'
-    xpath:
-      qty: '//*[@id="center_column"]/h1/span[2]'
-      name: '//*[@id="center_column"]/h1/span[1]'
-  -
-    url: 'https://biereartisanale.ch/18-flocons'
-    xpath:
-      name: '//*[@id="center_column"]/h1/span[1]'
-      qty: '//*[@id="center_column"]/h1/span[2]'
-  -
-    url: 'https://www.brauundrauchshop.ch/lallemand-wildbrew-helveticus-pitch-250g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-6657"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/lallemand-wildbrew-philly-sour-500-g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-7044"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/lallemand-wildbrew-sour-pitch-250-g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-1290"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/lallemand-belgian-wit-500g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-6670"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/lallemand-bry-97-pale-ale-500g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-559"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/lallemand-k%C3%B6lsch-500g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-3529"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/lallemand-kveik-ale-500g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-6669"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/lallemand-munich-classic-500g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-6771"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/lallemand-new-england-500g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-1714"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/lallemand-nottingham-500g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-2905"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/lallemand-servomyces-n%C3%A4hrstoff-500g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-1915"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/lallemand-verdant-ipa-500g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-6895"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/safale-be-134-500gr'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-1478"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/safale-ha-18-500gr'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-949"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/safale-k97-500g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-2352"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/safale-s-04-500g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-863"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/safale-t-58-500g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-2240"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/safale-us-05-500g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-3099"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/safbrew-be-256-abbaye-500g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-2891"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/safbrew-f2-500gr'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-2878"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/safbrew-la01-500g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-6170"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/safbrew-s-33-500g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-2666"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/safbrew-wb-06-weizen-500g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-1813"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/saflager-s-189-500g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-1778"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/saflager-s-23-500g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-429"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/saflager-w-3470-500g'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-1100"]'
-  -
-    url: 'https://www.brauundrauchshop.ch/safale-be-134-500gr'
-    xpath:
-      name: '//*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong'
-      qty: '//*[@id="stock-availability-value-1478"]'
-  -
-    url: 'https://biereartisanale.ch/levures-seches-pour-bieres/414-levure-seche-safale-s-04-500g.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/levures-500g/787-levure-seche-safale-be-134-500g.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/levures-seches-pour-bieres/416-levure-seche-safbrew-wb-06-500g-7610235000480.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/levures-seches-pour-bieres/417-levure-seche-safale-us-05-500g.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/levures-seches-pour-bieres/472-levure-seche-safebrew-t-58-500g.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/levures-seches-pour-bieres/472-levure-seche-safebrew-t-58-500g.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/levures-seches-pour-bieres/476-levure-seche-safebrew-s-23-500g.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/levures-seches-pour-bieres/482-levure-seche-saflager-w3470.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/levures-seches-pour-bieres/491-levure-seche-safbrew-abbaye-500g.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/levures-seches-pour-bieres/492-levure-seche-safbrew-s-33-500g.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/levures/684-levure-seche-safebrew-k-97-500g.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/levures-seches-pour-bieres/893-levure-seche-saflager-s-189-115g.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/houblons/632-houblon-ahtanum-en-pellets-10-grammes.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/houblons/44-houblon-amarillo-en-pellet-10-grammes-.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/houblons/45-houblon-brewers-gold-en-pellets-10-grammes.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/houblons/48-houblon-cascade-en-pellets-10-grammes.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/houblons/484-houblon-cascade-suisse-bio-en-pellets-10-grammes.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/houblons/474-houblon-centennial-en-pellets-10-grammes.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/houblons/46-houblon-challenger-en-pellets-10-grammes.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/houblons/316-houblon-chinook-en-pellets-10-grammes.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/houblons/383-houblon-citra-en-pellets-10-grammes.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/houblons/70-houblon-east-kent-goldings-en-pellets-10-grammes.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/houblons/47-houblon-fuggles-en-pellets-10-grammes.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
-  -
-    url: 'https://biereartisanale.ch/houblons/449-houblon-galaxy-en-pellets-10-grammes.html'
-    xpath:
-      name: '//*[@id="center_column"]/div/div[3]/h1'
-      qty: '//*[@id="quantityAvailable"]'
+:sites:
+- :url: https://biereartisanale.ch/109-levures-500g
+  :xpath:
+    :qty: //*[@id="center_column"]/h1/span[2]
+    :name: //*[@id="center_column"]/h1/span[1]
+- :url: https://biereartisanale.ch/22-houblons?id_category=22&n=45
+  :xpath:
+    :qty: //*[@id="center_column"]/h1/span[2]
+    :name: //*[@id="center_column"]/h1/span[1]
+- :url: https://www.brauundrauchshop.ch/safale-be-134-500gr
+  :xpath:
+    :qty: //*[@id="stock-availability-value-1478"]
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+- :url: https://biereartisanale.ch/12-malts
+  :xpath:
+    :qty: //*[@id="center_column"]/h1/span[2]
+    :name: //*[@id="center_column"]/h1/span[1]
+- :url: https://biereartisanale.ch/18-flocons
+  :xpath:
+    :name: //*[@id="center_column"]/h1/span[1]
+    :qty: //*[@id="center_column"]/h1/span[2]
+- :url: https://www.brauundrauchshop.ch/lallemand-wildbrew-helveticus-pitch-250g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-6657"]
+- :url: https://www.brauundrauchshop.ch/lallemand-wildbrew-philly-sour-500-g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-7044"]
+- :url: https://www.brauundrauchshop.ch/lallemand-wildbrew-sour-pitch-250-g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-1290"]
+- :url: https://www.brauundrauchshop.ch/lallemand-belgian-wit-500g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-6670"]
+- :url: https://www.brauundrauchshop.ch/lallemand-bry-97-pale-ale-500g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-559"]
+- :url: https://www.brauundrauchshop.ch/lallemand-k%C3%B6lsch-500g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-3529"]
+- :url: https://www.brauundrauchshop.ch/lallemand-kveik-ale-500g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-6669"]
+- :url: https://www.brauundrauchshop.ch/lallemand-munich-classic-500g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-6771"]
+- :url: https://www.brauundrauchshop.ch/lallemand-new-england-500g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-1714"]
+- :url: https://www.brauundrauchshop.ch/lallemand-nottingham-500g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-2905"]
+- :url: https://www.brauundrauchshop.ch/lallemand-servomyces-n%C3%A4hrstoff-500g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-1915"]
+- :url: https://www.brauundrauchshop.ch/lallemand-verdant-ipa-500g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-6895"]
+- :url: https://www.brauundrauchshop.ch/safale-be-134-500gr
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-1478"]
+- :url: https://www.brauundrauchshop.ch/safale-ha-18-500gr
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-949"]
+- :url: https://www.brauundrauchshop.ch/safale-k97-500g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-2352"]
+- :url: https://www.brauundrauchshop.ch/safale-s-04-500g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-863"]
+- :url: https://www.brauundrauchshop.ch/safale-t-58-500g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-2240"]
+- :url: https://www.brauundrauchshop.ch/safale-us-05-500g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-3099"]
+- :url: https://www.brauundrauchshop.ch/safbrew-be-256-abbaye-500g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-2891"]
+- :url: https://www.brauundrauchshop.ch/safbrew-f2-500gr
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-2878"]
+- :url: https://www.brauundrauchshop.ch/safbrew-la01-500g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-6170"]
+- :url: https://www.brauundrauchshop.ch/safbrew-s-33-500g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-2666"]
+- :url: https://www.brauundrauchshop.ch/safbrew-wb-06-weizen-500g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-1813"]
+- :url: https://www.brauundrauchshop.ch/saflager-s-189-500g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-1778"]
+- :url: https://www.brauundrauchshop.ch/saflager-s-23-500g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-429"]
+- :url: https://www.brauundrauchshop.ch/saflager-w-3470-500g
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-1100"]
+- :url: https://www.brauundrauchshop.ch/safale-be-134-500gr
+  :xpath:
+    :name: //*[@id="product-details-form"]/div/div[1]/div[1]/div/ul/li[6]/strong
+    :qty: //*[@id="stock-availability-value-1478"]
+- :url: https://biereartisanale.ch/levures-seches-pour-bieres/414-levure-seche-safale-s-04-500g.html
+  :xpath: &1
+    :name: //*[@id="center_column"]/div/div[3]/h1
+    :qty: //*[@id="quantityAvailable"]
+- :url: https://biereartisanale.ch/levures-500g/787-levure-seche-safale-be-134-500g.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/levures-seches-pour-bieres/416-levure-seche-safbrew-wb-06-500g-7610235000480.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/levures-seches-pour-bieres/417-levure-seche-safale-us-05-500g.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/levures-seches-pour-bieres/472-levure-seche-safebrew-t-58-500g.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/levures-seches-pour-bieres/472-levure-seche-safebrew-t-58-500g.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/levures-seches-pour-bieres/476-levure-seche-safebrew-s-23-500g.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/levures-seches-pour-bieres/482-levure-seche-saflager-w3470.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/levures-seches-pour-bieres/491-levure-seche-safbrew-abbaye-500g.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/levures-seches-pour-bieres/492-levure-seche-safbrew-s-33-500g.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/levures/684-levure-seche-safebrew-k-97-500g.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/levures-seches-pour-bieres/893-levure-seche-saflager-s-189-115g.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/houblons/632-houblon-ahtanum-en-pellets-10-grammes.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/houblons/44-houblon-amarillo-en-pellet-10-grammes-.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/houblons/45-houblon-brewers-gold-en-pellets-10-grammes.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/houblons/48-houblon-cascade-en-pellets-10-grammes.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/houblons/484-houblon-cascade-suisse-bio-en-pellets-10-grammes.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/houblons/474-houblon-centennial-en-pellets-10-grammes.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/houblons/46-houblon-challenger-en-pellets-10-grammes.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/houblons/316-houblon-chinook-en-pellets-10-grammes.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/houblons/383-houblon-citra-en-pellets-10-grammes.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/houblons/70-houblon-east-kent-goldings-en-pellets-10-grammes.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/houblons/47-houblon-fuggles-en-pellets-10-grammes.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/houblons/449-houblon-galaxy-en-pellets-10-grammes.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/253-malt-pilsen-premium-extra-clair-ebc-2-3-.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/254-malt-pilsen-ebc-3-5-.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/342-malt-pilsner-suisse-ebc-3-5.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/686-malt-barke-pilsner-ebc-25-45.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/676-malt-bucolique-pale-ale-suisse-bavois.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/255-malt-pale-ale-ebc-55-75.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/256-malt-type-vienne-ebc-7-9.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/687-malt-barke-vienne-ebc-6-9.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/677-malt-munich-suisse-bavois.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/257-malt-munich-type-1-ebc-12-17.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/258-malt-munich-type-2-ebc-20-25.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/688-malt-barke-munich-ebc-17-22.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/686-malt-barke-pilsner-ebc-25-45.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/687-malt-barke-vienne-ebc-6-9.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/688-malt-barke-munich-ebc-17-22.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/304-cereale-d-orge-fumee-au-hetre-ebc-4-8.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/305-malt-de-ble-de-froment-fume-au-chene-ebc-4-6.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/260-malt-acidule-ebc-3-6.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/261-malt-melanoide-ebc-60-80.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/262-malt-de-ble-de-froment-clair-ebc-3-5.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/263-malt-de-ble-de-froment-sombre-ebc-15-20.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/264-malt-de-ble-de-froment-caramelise-carawheat-ebc-110-140.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/265-malt-de-ble-de-froment-torrefie-ebc-900-1200.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/307-malt-de-ble-de-froment-boheme-sur-plancher-ebc-3-55.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/291-malt-de-ble-de-froment-diastasique-ebc-3-5.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/305-malt-de-ble-de-froment-fume-au-chene-ebc-4-6.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/266-malt-caramelise-carapils-ebc-25-65.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/267-malt-caramelise-carahell-ebc-20-30.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/268-malt-caramelise-carared-ebc-40-60.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/269-malt-caramelise-caraamber-ebc-60-80.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/270-malt-caramelise-caramunch-type-1-ebc-80-100.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/271-malt-caramelise-caramunch-type-2-ebc-110-130.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/272-malt-caramelise-caramunch-type-3-ebc-140-160.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/273-malt-caramelise-caraaroma-ebc-350-450.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/274-malt-caramelise-carabelge-ebc-30-35.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/275-malt-caramelise-carabohemian-ebc-170-220.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/264-malt-de-ble-de-froment-caramelise-carawheat-ebc-110-140.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/276-malt-caramelise-cararye-seigle-ebc-150-200.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/277-malt-pilsen-boheme-ebc-3-4.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/278-malt-de-boheme-sur-plancher-type-pilsner-ebc-3-5.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/306-malt-de-boheme-sur-plancher-type-pilsen-ebc-3-5.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/307-malt-de-ble-de-froment-boheme-sur-plancher-ebc-3-55.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/275-malt-caramelise-carabohemian-ebc-170-220.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/274-malt-caramelise-carabelge-ebc-30-35.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/279-malt-d-abbaye-ebc-40-50.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/308-malt-special-w-ebc-280-320.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/280-malt-torrefie-carafa-type-1-ebc-800-1000.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/282-malt-torrefie-carafa-type-2-ebc-1100-1200.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/283-malt-torrefie-carafa-type-3-ebc-1300-1500.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/284-malt-torrefie-carafa-spezial-type-1-ebc-800-1000.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/285-malt-torrefie-carafa-spezial-type-2-ebc-1100-1200.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/286-malt-torrefie-carafa-spezial-type-3-ebc-1300-1500.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/265-malt-de-ble-de-froment-torrefie-ebc-900-1200.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/287-malt-de-seigle-torrefie-ebc-500-800.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/288-malt-d-epeautre-torrefie-ebc-450-650.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/290-cereale-d-orge-torrefiee-ebc-1100-1300.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/292-malt-d-orge-diastasique-ebc-25-4.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/291-malt-de-ble-de-froment-diastasique-ebc-3-5.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/293-malt-de-seigle-clair-ebc-4-10.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/276-malt-caramelise-cararye-seigle-ebc-150-200.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/287-malt-de-seigle-torrefie-ebc-500-800.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/294-malt-bio-pilsner-ebc-28-4.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/303-malt-bio-pale-ale-ebc-55-75.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/295-malt-bio-vienne-ebc-6-9.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/298-malt-bio-de-ble-froment-ebc-3-5.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/564-malt-bio-munich-ebc-18-24.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/792-malt-bio-d-avoine.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/908-malt-bio-pale-ale-suisse.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/310-malt-bio-carapils-ebc-25-65.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/300-malt-bio-carahell-ebc-20-30.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/311-malt-bio-carared-ebc-40-60.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/301-malt-bio-caramunich-ebc-110-130.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/312-malt-bio-caraaroma-ebc-300-450.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/302-malt-bio-carafa-ebc-1000-1200.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/299-malt-bio-de-seigle-torrefie-ebc-500-800.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/490-malt-bio-de-ble-froment-torrefie-ebc-500-800.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/793-malt-bio-de-sarrasin-4-15-ebc.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/841-malt-simpsons-brown-coffee-ebc-430-600-500-gr.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/842-malt-simpsons-chocolat-ebc-1067-1300-500-gr.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/843-malt-simpsons-drc-ebc-280-320-500-gr.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/844-malt-simpsons-lager-ebc-2-4-500-gr.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/845-malt-simpsons-crystal-t50-ebc-126-140-500-gr.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/846-malt-simpsons-crystal-medium-ebc-167-190-500-gr.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/858-malt-simpsons-maris-otter.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/947-malt-simpsons-wheat-ble-ebc-430-600-500-gr.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/740-malt-whisky-ebc-.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/860-malt-biscuit-ebc-45-55.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/342-malt-pilsner-suisse-ebc-3-5.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/676-malt-bucolique-pale-ale-suisse-bavois.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/malts/677-malt-munich-suisse-bavois.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/908-malt-bio-pale-ale-suisse.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/159-flocons-d-orge-1kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/160-flocons-de-mais-1kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/161-flocons-de-ble-froment-1kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/162-flocons-de-riz-1kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/163-flocons-d-avoine-1kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/945-flocon-d-epautre.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/946-flocon-de-seigle.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/171-halades-191-1litre.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/172-halacid-s-15-kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/173-halapur-mp-1kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/174-halades-alco-08kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/716-cip-452-bouteille-12kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/717-cip-452-bidon-25kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/718-halapur-spa-bouteille-12kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/719-halapur-spa-bouteille-12kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/721-rv-547-pf-bouteille-1kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/722-halades-191-bidon-10kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/723-halades-pe-bidon-10kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/724-halades-alco-bidon-4kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/734-bidon-aldo-20-litres.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/822-halades-194-1kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/823-halafloor-438-1kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/824-halag-mousse-active-565-pf-1kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/825-haladerm-761-950g.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/826-halaspet-792-830g.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/850-halag-enzybrew-10-11kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/964-halag-halapur-spa-20kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/965-halag-halades-pe-20kg.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/864-halag-support-pour-savon-ou-desinfectant.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/828-robinet.html
+  :xpath: *1
+- :url: https://biereartisanale.ch/home/890-halag-robinet-pour-estagnon-25-kg.html
+  :xpath: *1

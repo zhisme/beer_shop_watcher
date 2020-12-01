@@ -13,15 +13,15 @@ module BeerShopWatcher
   def self.scrape # rubocop:disable Metrics/MethodLength, Metrics/AbcSize
     config = ConfigLoader.()
 
-    config['sites'].each do |site|
-      hash = Logic::Scraper.(site['url'], site['xpath'])
+    config[:sites].each do |site|
+      hash = Logic::Scraper.(site[:url], site[:xpath])
       name, count = Logic::Formatter.(hash)
 
       Writer::Main.insert_products(
-        site['url'], site['xpath'].to_json, name, hash['qty'], count
+        site[:url], site[:xpath].to_json, name, hash[:qty], count
       )
 
-      AppLogger.debug("#{site['url']} proccessed")
+      AppLogger.debug("#{site[:url]} proccessed")
     rescue StandardError => e
       AppLogger.error(e)
       notify_rollbar(e)
