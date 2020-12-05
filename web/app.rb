@@ -5,9 +5,11 @@ require 'beer_shop_watcher/database/connection'
 require_relative 'controllers/products/index'
 require_relative 'views/products/index'
 require_relative 'controllers/api/v1/products/index'
-require 'pry'
+require 'rollbar/middleware/sinatra'
+require 'beer_shop_watcher/config/initializers'
 
 set :views, "#{settings.root}/templates"
+use Rollbar::Middleware::Sinatra
 
 get '/' do
   controller = Web::Controllers::Products::Index.(params)
