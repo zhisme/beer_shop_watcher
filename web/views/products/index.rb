@@ -2,7 +2,7 @@ module Web
   module Views
     module Products
       class Index
-        attr_reader :products, :page_title
+        attr_reader :products, :product_names, :page_title
 
         def self.call(context)
           new.call(context)
@@ -10,7 +10,7 @@ module Web
 
         def call(context)
           @page_title = 'Diagram'
-          @products = context[:products]
+          @product_names = context[:product_names]
 
           self
         end

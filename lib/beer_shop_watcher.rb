@@ -8,6 +8,7 @@ require 'beer_shop_watcher/deliver/mail/main'
 require 'beer_shop_watcher/reports/main'
 require 'beer_shop_watcher/view/reports/daily'
 require 'beer_shop_watcher/view/reports/overall'
+require 'pry'
 
 module BeerShopWatcher
   def self.scrape # rubocop:disable Metrics/MethodLength, Metrics/AbcSize

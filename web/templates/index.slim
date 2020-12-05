@@ -2,18 +2,20 @@ doctype html
 html
   head
     title Beer Shop Watcher | #{view.page_title}
-    meta name="keywords" content="template language"
-    meta name="author" content="author"
+
+    script crossorigin="anonymous" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" src="https://code.jquery.com/jquery-2.2.4.js"
+    script src="https://www.gstatic.com/charts/loader.js" type="text/javascript"
+    script src="/assets/js/line-chart.js" type="text/javascript"
 
   body
     h1 Beer shop index page
-    #content
-      - if view.products
-        - view.products.each do |product|
-          p = product[:name]
-          p = product[:id]
-      - else
-        p No products yet!
-
-
+    p#loader Loading in progress...
+    form#productForm
+      select
+        - view.product_names.each do |name|
+          option value="#{name}"
+            = name
+      div
+        button type="submit" Submit
+    #curve_chart style=("width: 1600px; height: 500px; margin-left: -5%;")
 

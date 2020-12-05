@@ -6,7 +6,7 @@ module Web
       class Index < Web::Controllers::BaseController
         def call(_params)
           @template = :index
-          @context[:products] = DB[:products].order(Sequel.desc(:id)).limit(10).to_a
+          @context[:product_names] = DB[:products].distinct.select(:name).order(Sequel.asc(:name)).to_a.map { |row| row[:name] }
 
           self
         end
