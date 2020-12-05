@@ -5,17 +5,42 @@ html
 
     script crossorigin="anonymous" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" src="https://code.jquery.com/jquery-2.2.4.js"
     script src="https://www.gstatic.com/charts/loader.js" type="text/javascript"
+    script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
     script src="/assets/js/line-chart.js" type="text/javascript"
+
+    link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
 
   body
     h1 Beer shop index page
-    p#loader Loading in progress...
     form#productForm
       select
         - view.product_names.each do |name|
           option value="#{name}"
             = name
+        input#dates name="dates"
+        input#start name="start" type="hidden" value="#{view.min_date}"
+        input#end name="end" type="hidden" value="#{view.max_date}"
       div
         button type="submit" Submit
-    #curve_chart style=("width: 1600px; height: 500px; margin-left: -5%;")
 
+    div#loader
+      img src="/assets/img/loading.gif" width="150"
+    div#content
+      #curve_chart style=("width: 1600px; height: 600px;")
+
+javascript:
+  var options = {
+    minDate: "#{view.min_date}",
+    maxDate: "#{view.max_date}",
+    locale: {
+      format: 'YYYY-MM-DD'
+    }
+  }
+
+  $(document).ready(function() {
+    $('input[name="dates"]').daterangepicker(options, function(start, end, label) {
+      $('#start').val(start.format('YYYY-MM-DD'));
+      $('#end').val(end.format('YYYY-MM-DD'));
+    });
+  });

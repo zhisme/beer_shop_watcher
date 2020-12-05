@@ -7,15 +7,27 @@ module Web
       module V1
         module Products
           class Index < BaseController
-            def call(params)
-              products = DB[:products].where(Sequel.ilike(:name, "%#{params['product_name']}%")).to_a
-              @presenter = Web::Presenters::Products::Index.new(products)
+            def call
+              @items = DB[:products].where(
+                Sequel.ilike(:name, "%#{params['product_name']}%")
+              )
+
+              @items = with_range if params['start_date']
+              @items = items.to_a
 
               self
             end
 
-            def render
-              @presenter.as_json.to_json
+            private
+
+            def presenter
+              Web::Presenters::Products::Index
+            end
+
+            def with_range
+              items
+                .where(Sequel.lit('created_at > ?', params['start_date']))
+                .where(Sequel.lit('created_at < ?', params['end_date']))
             end
           end
         end

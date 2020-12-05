@@ -8,21 +8,25 @@ $(document).ready(function() {
 
   $("#productForm").on('submit', function(evt) {
     evt.preventDefault();
-    currentProductName = $('#productForm select').val();
 
-    loadProducts();
+    currentProductName = $('#productForm select').val();
+    var startDate = $('#start').val()
+    var endDate = $('#end').val()
+
+    if (!validate(startDate, endDate)) {
+      return;
+    }
+
+    var opts = { data: { start_date: startDate, end_date: endDate, product_name: currentProductName } }
+
+    $('#loader').show();
+
+    loadProducts(params(opts));
   });
 });
 
-function loadProducts() {
-  var params = {
-    url: '/api/v1/products',
-    data: {
-      product_name: currentProductName
-    }
-  }
-
-  var jqxhr = $.ajax(params)
+function loadProducts(opts = {}) {
+  var jqxhr = $.ajax(params(opts))
     .done(function(json) {
       $('#loader').hide();
       products = JSON.parse(json)['products'];
@@ -44,4 +48,24 @@ function drawChart() {
   var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
   chart.draw(data, options);
+}
+
+function params(opts) {
+  var defaultParams = {
+    url: '/api/v1/products',
+    data: {
+      product_name: currentProductName
+    }
+  }
+
+  return $.extend(defaultParams, opts)
+}
+
+function validate(startDate, endDate) {
+  if (!startDate || !endDate) {
+    alert("date range not filled!");
+    return false;
+  }
+
+  return true
 }
