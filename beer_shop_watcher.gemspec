@@ -32,6 +32,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'sequel_postgresql_triggers'
   spec.add_dependency 'sinatra', '2.1'
   spec.add_dependency 'slim', '4.1'
+  spec.add_dependency 'puma', '5.1'
 
   spec.add_development_dependency 'bundler', '~> 1.16.5'
   spec.add_development_dependency 'pry', '~> 0.13'
