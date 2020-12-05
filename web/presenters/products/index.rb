@@ -17,7 +17,7 @@ module Web
         private
 
         def diagram_format
-          products.reduce([%w[date sales]]) do |acc, product|
+          products.reduce([['date', 'in stock']]) do |acc, product|
             acc << [product[:created_at].to_s, product[:count]]
           end
         end
